@@ -1,0 +1,19 @@
+* {
+    font-size: calc(10px + 0.5vw);
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid red;
+
+}
