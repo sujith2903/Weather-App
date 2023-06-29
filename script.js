@@ -3,6 +3,10 @@ const locations = document.querySelector('#location')
 const condition = document.querySelector('.condition')
 const city = document.querySelector('.city')
 const temperature = document.querySelector('.temperature')
+const img = document.querySelector('img')
+const feelsLike = document.querySelector('.feels-like')
+const humidity = document.querySelector('.humidity')
+const wind = document.querySelector('.wind-speed')
 
 input.addEventListener('submit', (event) => {
     event.preventDefault()
@@ -26,6 +30,14 @@ async function getWeatherData() {
     city.textContent = `${ data.location.name }` + ', ' + `${data.location.region}` + ', ' + `${data.location.country}`
 
     temperature.textContent = `${data.current.temp_f}` + ' °F'
+
+    img.src = data.current.condition.icon
+
+    feelsLike.textContent = 'Feels Like :' + ` ${data.current.feelslike_f}` + ' °F'
+
+    humidity.textContent = 'Humidity :' + ` ${data.current.humidity}` + '%'
+
+    wind.textContent = 'Wind Speed :' + ` ${data.current.wind_mph}` + ' mph'
 }
 
 getWeatherData()
