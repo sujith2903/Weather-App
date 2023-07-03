@@ -2,6 +2,8 @@
     font-size: calc(10px + 0.5vw);
     margin: 0px;
     padding: 0px;
+    font-family: "Roboto";
+    letter-spacing: 1px;
 }
 
 body{
@@ -9,6 +11,16 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
 }
 
 .container{
@@ -16,9 +28,11 @@ body{
     flex-direction: column;
     width: 50vw;
     height: 50vh;
-    border: 1px solid red;
     padding:50px;
     gap:25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    color: white;
 }
 
 form{
@@ -29,6 +43,14 @@ form{
 input{
     align-items: center;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 1px 1px rgb(0, 0, 0);
+    border-radius: 10px;
+    color: white;
+    width: 20rem;
+    height: 4rem;
+    font-size: 2rem;
 }
 
 .content{
@@ -46,8 +68,8 @@ input{
 }
 
 img{
-    height:5rem;
-    width: 5rem;
+    height:3rem;
+    width: 3rem;
 }
 
 .feels-like,.humidity,.wind-speed{
@@ -57,7 +79,7 @@ img{
 .left-box, .right-box{
     display: flex;
     flex-direction: column;
-    border:1px solid green;
+   
     justify-content: center;
     gap:2px;
 }
