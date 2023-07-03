@@ -56,7 +56,6 @@ input{
 .content{
     display: flex;
     justify-content: space-between;
-    padding: 50px;
 }
 
 .condition{
@@ -79,7 +78,7 @@ img{
 .left-box, .right-box{
     display: flex;
     flex-direction: column;
-   
+    padding: 10px;
     justify-content: center;
     gap:2px;
 }
