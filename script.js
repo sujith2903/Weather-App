@@ -19,7 +19,7 @@ locations.addEventListener('change', () => {
 async function getWeatherData() {
     
     console.log(locations.value)
-    const response = await fetch('http://api.weatherapi.com/v1/current.json?key=8b5d56e9eee24f158d7225609232506&q=' + `${locations.value}`)
+    const response = await fetch('http://api.weatherapi.com/v1/current.json?key=8b5d56e9eee24f158d7225609232506&q=' + `${locations.value}`,{ mode: 'cors'})
     
     const data = await response.json()
 
